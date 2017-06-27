@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+	<title>Color sorting game</title>
+
+	<meta name="keywords" content="sortable, reorder, list, javascript, html5, drag and drop, dnd, rubaxa"/>
+	<meta name="description" content="Color Sort is a game that scores users on how accurate they sort a list of colors."/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<link rel="stylesheet" href="main.css">
+
+	<link rel="shortcut icon" href="favicon.ico" />
+
+</head>
+
+<body>
+
+	<div class="container_h" id = "container">
+		<div style="padding: 80px 150px 0; height: 160px;">
+			<h1 id = "submit_s">Start sorting the colors!</h1>
+		</div>
+	</div>
+
+	<div class = "try_again">
+		<ul >
+			<li onclick="to_blue()">Switch Color</li>
+            <li style="display: none;"><a href="javascript:window.location.reload()">Try Again</a></li>
+            <li style="display: none; color: #d3d3d3;"><strong>Share</strong></li>
+            <li onclick ="submit()" style="color:#d3d3d3;"> <strong>Submit</strong> </li>
+            <li></li>
+        </ul>
+    </div>
+
+   
+
+	<div class="container"  style="height: 520px">
+		<div data-force="30" class="layer block" >
+			<ul id="foo" class="block__list block__list_words">
+				<li></li> 
+				<li></li> 
+				<li></li> 
+				<li></li> 
+				<li></li> 
+
+				<li></li> 
+				<li></li> 
+				<li></li>
+				<li></li> 
+				<li></li> 
+
+				<li></li> 
+				<li></li> 
+				<li></li> 
+				<li></li> 
+				<li></li> 
+
+				<li></li>
+				<li></li> 
+				<li></li> 
+				<li></li> 
+				<li></li>
+			</ul>
+
+			<ul id="indication" class="another">
+				<li class = "fix" style="background-color:hsl(360, 100%, 50%)"></li> 
+				<li class = "end" style="background-color:hsl(350, 100%, 90%)"></li>
+			</ul>
+		</div>
+	</div>
+
+	
+
+
+
+
+	<!--script src = "Sortable.js"></script-->
+	<script src = "coloring.js"></script>
+	<script src = "https://github.com/RubaXa/Sortable/blob/master/Sortable.js"></script>
+
+</body>
+</html>
